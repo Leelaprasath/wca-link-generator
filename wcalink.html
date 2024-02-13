@@ -2,390 +2,466 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WCA TOURNAMENT LINK GENERATOR</title>
-    <link rel="icon" href="logo.jpeg">
+    <title>WCA Tournament Link Generator</title>
+    <link rel="icon" href="wcalogo (2).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
 </head>
-<body style="background-color: #ffe4c4;">
-    <h2 style="text-align: center;">WCA TOURNAMENT LINK GENERATOR</h2>
-    <div class="grid" style="display: grid;">
-        <div class="grid1">
-            
-    SAT BEG : <input type="text" id="satbeg">&nbsp;&nbsp;
-    Enter the Date : <input type="text" id="satbegdate">
-    <button class="satbegbtn" type="button">submit</button>
-    <button class="satbegcopy">Copy</button>
-    
-    <div class="satbegout" style="text-align: center">
-    </div>
-    <br>
-    <br>
-    SAT ADV BEG : <input type="text" id="satadvbeg">&nbsp;&nbsp;
-    <button class="satadvbegbtn" type="button">submit</button>
-    <button class="satadvbegcopy">Copy</button>
-    
-    <div class="satadvbegout" style="text-align: center">
-    </div>
-    <br>
-    <br>
-    SUN BEG : <input type="text" id="sunbeg">&nbsp;&nbsp;
-    Enter the Date : <input type="text" id="sunbegdate">
-    <button class="sunbegbtn" type="button">submit</button>
-    <button class="sunbegcopy">Copy</button>
-    
-    <div class="sunbegout" style="text-align: center">
-    </div>
-    <br>
-    <br>
-   SUN ADV BEG : <input type="text" id="sunadv">&nbsp;&nbsp;
-    <button class="sunadvbtn" type="button">submit</button>
-    <button class="sunadvbegcopy">Copy</button>
-    
-    <div class="sunadvout" style="text-align: center">
-    </div>
-    <br>
-    <br>
-    <h3>SAT MASTERS LINK</h3>
-   <h4>Click the Below button to get the Saturday Master's Link</h4>
-    <button class="satmasbtn" type="button">submit</button>
-    <button class="satmascopy">Copy</button>
-    <div class="satmasout" style="text-align: center"></div><br><br>
-    
+<body>
+  <div>
+    <div class="text-center w-100 mt-4"><strong> WARRIOR CHESS ACADEMT TOURNAMENT🔥LINK GENERATOR</strong></div>
+        <table class="table table-striped mt-4">
+              <tbody>
+                <tr class="fs-6">
+                    <td class="text-danger">SATURDAY LINKS</td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>Sat Tmt No : <input type="text" placeholder="Tournament Number" id="sattmtno"/></td>
+                  <td>Sat Tmt Date: <input type="text" placeholder="Saturday Date" id="satdate"/></td>
+                </tr>
+                <tr class=" fs-6">
+                    <td class="text-danger">
+                       SATURDAY LEVELS
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    LEVEL-1 LINK : <input type="text" placeholder="Sat Lvl - 1 Link" id="satlvl1link"/><button class="btn btn-outline-success mx-4" type="button" id="satlvl1submit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="satlvl1copy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="satlvl1share">share</button>
+                  </td>
+                  <td><p id="satlvl1out"></p></td>
+                </tr>
+                <tr>
+                    <td>
+                      LEVEL-2 LINK : <input type="text" placeholder="Sat Lvl - 2 Link" id="satlvl2link"/><button class="btn btn-outline-success mx-4" type="button" id="satlvl2submit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="satlvl2copy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="satlvl2share">share</button>
+                    </td>
+                    <td><p id="satlvl2out"></p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      LEVEL-3 LINK : <input type="text" placeholder="Sat Lvl - 3 Link" id="satlvl3link"/><button class="btn btn-outline-success mx-4" type="button" id="satlvl3submit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="satlvl3copy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="satlvl3share">share</button>
+                    </td>
+                    <td><p id="satlvl3out"></p></td>
+                  </tr>
+                  <tr class="fs-6">
+                    <td  class="text-danger">SUNDAY LINKS</td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>Sun Tmt No : <input type="text" placeholder="Tournament Number" id="suntmtno"/></td>
+                  <td>Sun Tmt Date: <input type="text" placeholder="Sunday Date" id="sundate"/></td>
+                </tr>
+                <tr class=" fs-6">
+                    <td class="text-danger">
+                       SUNDAY LEVELS
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    LEVEL-1 LINK : <input type="text" placeholder="Sun Lvl - 1 Link" id="sunlvl1link"/><button class="btn btn-outline-success mx-4" type="button" id="sunlvl1submit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="sunlvl1copy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="sunlvl1share">share</button>
+                  </td>
+                  <td><p id="sunlvl1out"></p></td>
+                </tr>
+                <tr>
+                    <td>
+                      LEVEL-2 LINK : <input type="text" placeholder="Sun Lvl - 2 Link" id="sunlvl2link"/><button class="btn btn-outline-success mx-4" type="button" id="sunlvl2submit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="sunlvl2copy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="sunlvl2share">share</button>
+                    </td>
+                    <td><p id="sunlvl2out"></p></td>
+                  </tr>
+                  <tr class=" fs-6">
+                    <td class="text-danger">
+                       MONDAY TMT
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                  <td>
+                    MONDAY LINK : <input type="text" placeholder="Mon Tmt Link" id="monlink"/><button class="btn btn-outline-success mx-4" type="button" id="monsubmit">submit</button><button class="btn btn-outline-warning mx-4" type="button" id="moncopy">copy</button><button class="btn btn-outline-info mx-4" type="button" id="monshare">share</button>
+                  </td>
+                  <td><p id="monout"></p></td>
+                </tr>
+              </tbody>
+          </table>
 
-    <h3>SUN MASTERS LINK</h3>
-    <h4>Click the Below button to get the Sunday Master's Link</h4>
-    <button class="sunmasbtn" type="button">submit</button>
-    <button class="sunmascopy">Copy</button>
-    
-    <div class="sunmasout" style="text-align: center"></div><br><br>
-    <h3>MONDAY'S TOURNAMENT LINK</h3>
-    MON TMT LINK : <input type="text" id="atmt">&nbsp;&nbsp;
-    <button class="atmtbtn" type="button">submit</button>
-    <button class="atmtcopy">Copy</button>
-    <div class="atmtout" style="text-align: center">
-    </div>
-    <br>
-    <h3>SWISS TOURNAMENT LINK</h3>
-    SWISS TOURNAMENT LINK : <input type="text" id="swiss">
-    <button class="swissbtn" type="button">submit</button>
-    <button class="swisscopy">Copy</button>
-    <div class="output" style="text-align: center;">
-    </div>
-    </div>
 </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script>
-        document.querySelector('.swissbtn').addEventListener('click',()=>{
-           let swiss=document.getElementById('swiss');
-          document.querySelector('.output').innerHTML= `
-         
-*♟ Warrior Chess Academy ♟* ${"<br>"}${"<br>"}
+         document.querySelector('#satlvl1submit').addEventListener('click',()=>{
+          document.querySelector('#satlvl1out').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
 
-*🔥WCA - SWISS TOURNAMENT🔥* ${"<br>"}${"<br>"}
-
-Dear Players,${"<br>"}${"<br>"}
-
-Tournament Link:👇${"<br>"}
-${swiss.value}${"<br>"}
-
-----------------------------------------------------${"<br>"}${"<br>"}
-
- Time :    ${"<br>"}
-🟠 07.00am (IST)${"<br>"}
-🔵 09.30am (MYT)${"<br>"}
-🟢 06.30pm (PST)${"<br>"}${"<br>"}
-
-----------------------------------------------------${"<br>"}${"<br>"}
-
-All the Best💐
-
-            `;
-           
-        });
-        document.querySelector('.satbegbtn').addEventListener('click',()=>{
-           let satbeg=document.getElementById('satbeg');
-           let satbegdate=document.getElementById('satbegdate');
-          document.querySelector('.satbegout').innerHTML= `
-          
-          *♟ WARRIOR CHESS ACADEMY ♟*${"<br>"}${"<br>"}
-
-*🔥Beginner to Adv.Beginner Level🔥*${"<br>"}${"<br>"}${"<br>"}
-
+*🔥 ${document.querySelector('#sattmtno').value} WCA Online TMT - L1 🔥*${"<br>"}${"<br>"}
 
 ----------------------------------------------------------${"<br>"}${"<br>"}
 
-*${satbegdate.value}* ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} - 11.30 am (IST)${"<br>"}${"<br>"}
+⚜️ *Date :* ${document.querySelector('#satdate').value}, 2024${"<br>"}
+⚜️ *Day  :* Saturday${"<br>"}${"<br>"}
 
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 10.00 am (UAE)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 02.00 pm (MYT)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 06.00 am (UK)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 05.00 pm (AUS)${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-
-*💥Every Master was once a Beginner💥*${"<br>"}${"<br>"}
-
-${satbeg.value} ${"<br>"}${"<br>"}
-
-⏱ Duration - 100 minutes${"<br>"}
-🤝 ALL THE BEST 🤝${"<br>"} `
-})
-document.querySelector('.satadvbegbtn').addEventListener('click',()=>{
-           let satbeg=document.getElementById('satadvbeg');
-           let satbegdate=document.getElementById('satbegdate');
-          document.querySelector('.satadvbegout').innerHTML= `
-         
-          *♟ WARRIOR CHESS ACADEMY ♟*${"<br>"}${"<br>"}
-
-*🔥Adv.Beginner to Intermediate🔥*${"<br>"}${"<br>"}${"<br>"}
-
+⚜️ *Time :*${"<br>"}
+🔴 11.30 am *( IST )*${"<br>"}
+🟢 10.00 am *( UAE )*${"<br>"}
+🔴 09.00 am *( Saudi / Kuwait / Qatar )*${"<br>"}
+🟢 02.00 pm *( MYT / SGT / HKT )*${"<br>"}
+🔴 06.00 am *( UK )*${"<br>"}
+🟢 07.00 am *( CET )*${"<br>"}
+🔴 05.00 pm *( AUS )*${"<br>"}${"<br>"}
 
 ----------------------------------------------------------${"<br>"}${"<br>"}
 
-*${satbegdate.value}* ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 11.30 am (IST)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 10.00 am (UAE)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 02.00 pm (MYT)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 06.00 am (UK)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 05.00 pm (AUS)${"<br>"}${"<br>"}
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#satlvl1link').value}${"<br>"}${"<br>"}
 
 ----------------------------------------------------------${"<br>"}${"<br>"}
 
-
-*💥Every Master was once a Beginner💥*${"<br>"}${"<br>"}
-
-${satadvbeg.value} ${"<br>"}${"<br>"}
-
-⏱ Duration - 100 minutes${"<br>"}
-🤝 ALL THE BEST 🤝${"<br>"} `
-})
-
-document.querySelector('.sunbegbtn').addEventListener('click',()=>{
-           let sunbeg=document.getElementById('sunbeg');
-           let sunbegdate=document.getElementById('sunbegdate');
-          document.querySelector('.sunbegout').innerHTML= `
-         
-          *♟ WARRIOR CHESS ACADEMY ♟*${"<br>"}${"<br>"}
-
-*🔥Beginner to Adv.Beginner Level🔥*${"<br>"}${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-*${sunbegdate.value}*${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 05.30 pm (IST)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 04.00 pm (UAE)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 08.00 pm ( MYT )${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 12.00 pm (UK)${"<br>"}${"<br>"}
-                               
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 11.00 pm (AUS)${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-
-*💥Every Master was once a Beginner💥*${"<br>"}${"<br>"}
-
-${sunbeg.value}${"<br>"}${"<br>"}
-
-
-⏱ Duration - 100 minutes${"<br>"}
-🤝 ALL THE BEST 🤝${"<br>"}
-`
-})
-
-document.querySelector('.sunadvbtn').addEventListener('click',()=>{
-           let sunadv=document.getElementById('sunadv');
-           let sunadvdate=document.getElementById('sunbegdate');
-          document.querySelector('.sunadvout').innerHTML= `
-         
-          *♟ WARRIOR CHESS ACADEMY ♟*${"<br>"}${"<br>"}
-
-*🔥Adv.Beginner to Intermediate🔥*${"<br>"}${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-*${sunadvdate.value}*${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 05.30 pm (IST)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 04.00 pm (UAE)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 08.00 pm ( MYT )${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 12.00 pm (UK)${"<br>"}${"<br>"}
-                               
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 11.00 pm (AUS)${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-
-*💥Every Master was once a Beginner💥*${"<br>"}${"<br>"}
-
-${sunadv.value}${"<br>"}${"<br>"}
-
-
-⏱ Duration - 100 minutes${"<br>"}
-🤝 ALL THE BEST 🤝${"<br>"}
-`
-})
-document.querySelector('.satmasbtn').addEventListener('click',()=>{
-           let satbegdate=document.getElementById('satbegdate');
-           let satbeg=document.getElementById('satbeg');
-           let satadvbeg=document.getElementById('satadvbeg');
-          document.querySelector('.satmasout').innerHTML= `
-         
-          *♟ Warrior Chess Academy ♟*${"<br>"}${"<br>"}
-
-*Date - ${satbegdate.value}*${"<br>"}
-*Day  - ${"Saturday"}*${"<br>"}${"<br>"}
-
-*BEGINNER LEVEL ARENA*${"<br>"}
-${satbeg.value}${"<br>"}${"<br>"}
-
-*ADVANCED BEGINNER LEVEL ARENA*${"<br>"}
-${satadvbeg.value}${"<br>"}${"<br>"}
-
-OBSERVE Students Gameplay to check their Skills and dis - advantages made in their GAME.${"<br>"}${"<br>"}
-
-⏱ Duration - 100min 👍
-
-`
-})
-document.querySelector('.sunmasbtn').addEventListener('click',()=>{
-           let sunbegdate=document.getElementById('sunbegdate');
-           let sunbeg=document.getElementById('sunbeg');
-           let sunadv=document.getElementById('sunadv');
-          document.querySelector('.sunmasout').innerHTML= `
-         
-          *♟ Warrior Chess Academy ♟*${"<br>"}${"<br>"}
-
-*Date - ${sunbegdate.value}*${"<br>"}
-*Day  - ${"Sunday"}*${"<br>"}${"<br>"}
-
-*BEGINNER LEVEL ARENA*${"<br>"}
-${sunbeg.value}${"<br>"}${"<br>"}
-
-*ADVANCED BEGINNER LEVEL ARENA*${"<br>"}
-${sunadv.value}${"<br>"}${"<br>"}
-
-OBSERVE Students Gameplay to check their Skills and dis - advantages made in their GAME.${"<br>"}${"<br>"}
-
-⏱ Duration - 100min 👍
-
-`
-})
-document.querySelector('.atmtbtn').addEventListener('click',()=>{
-           let atmt=document.getElementById('atmt');
-           let sunbegdate=document.getElementById('sunbegdate');
-          document.querySelector('.atmtout').innerHTML= `
-
-          *♟ WARRIOR CHESS ACADEMY ♟*${"<br>"}${"<br>"}
-
-          ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}TOURNAMENT TIMING${"<br>"}
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-${sunbegdate.value}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 04.30 pm (PST)${"<br>"}${"<br>"}     
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 06.30 pm (CST)${"<br>"}${"<br>"}
-
-${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"} ${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}${"&nbsp"}- 07.30 pm (EST)${"<br>"}${"<br>"}
-
-----------------------------------------------------------${"<br>"}${"<br>"}
-
-*💥Every Master was once a Beginner💥*${"<br>"}${"<br>"}
-
-${atmt.value}${"<br>"}${"<br>"}
-
-⏱ Duration - 100 minutes${"<br>"}
-🤝 ALL THE BEST 🤝
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
           `
-})
-document.querySelector('.satbegcopy').addEventListener('click', function() {
-          const textToCopy = document.querySelector('.satbegout').innerText;
-          const textarea = document.createElement('textarea');
-          textarea.value = textToCopy;
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand('copy');
-          document.body.removeChild(textarea);
-          alert('Sat Beg Text copied!');
-        });
-document.querySelector('.satadvbegcopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.satadvbegout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert('Sat Adv Text copied!');
+         });
+
+document.querySelector('#satlvl1copy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#satlvl1out').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Saturday Level - 1 copied!');
 });
-document.querySelector('.sunbegcopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.sunbegout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert('Sun Beg Text copied!');
+
+document.querySelector('#satlvl1share').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#satlvl1out').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
 });
-document.querySelector('.sunadvbegcopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.sunadvout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert('Sun Adv Text copied!');
+
+// -------------------------SAT LVL 1 -----------------------
+
+document.querySelector('#satlvl2submit').addEventListener('click',()=>{
+          document.querySelector('#satlvl2out').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
+
+*🔥 ${document.querySelector('#sattmtno').value} WCA Online TMT - L2 🔥*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⚜️ *Date :* ${document.querySelector('#satdate').value}, 2024${"<br>"}
+⚜️ *Day  :* Saturday${"<br>"}${"<br>"}
+
+⚜️ *Time :*${"<br>"}
+🔴 11.30 am *( IST )*${"<br>"}
+🟢 10.00 am *( UAE )*${"<br>"}
+🔴 09.00 am *( Saudi / Kuwait / Qatar )*${"<br>"}
+🟢 02.00 pm *( MYT / SGT / HKT )*${"<br>"}
+🔴 06.00 am *( UK )*${"<br>"}
+🟢 07.00 am *( CET )*${"<br>"}
+🔴 05.00 pm *( AUS )*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#satlvl2link').value}${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
+          `
+         });
+
+document.querySelector('#satlvl2copy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#satlvl2out').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Saturday Level - 2 copied!');
 });
-document.querySelector('.satmascopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.satmasout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert("Sat Master's Text copied!");
+
+document.querySelector('#satlvl2share').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#satlvl2out').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
 });
-document.querySelector('.sunmascopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.sunmasout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert("Sun Master's Text copied!");
+// -------------------------SAT LVL 2 -----------------------
+
+document.querySelector('#satlvl3submit').addEventListener('click',()=>{
+          document.querySelector('#satlvl3out').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
+
+*🔥 ${document.querySelector('#sattmtno').value} WCA Online TMT - L3 🔥*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⚜️ *Date :* ${document.querySelector('#satdate').value}, 2024${"<br>"}
+⚜️ *Day  :* Saturday${"<br>"}${"<br>"}
+
+⚜️ *Time :*${"<br>"}
+🔴 11.30 am *( IST )*${"<br>"}
+🟢 10.00 am *( UAE )*${"<br>"}
+🔴 09.00 am *( Saudi / Kuwait / Qatar )*${"<br>"}
+🟢 02.00 pm *( MYT / SGT / HKT )*${"<br>"}
+🔴 06.00 am *( UK )*${"<br>"}
+🟢 07.00 am *( CET )*${"<br>"}
+🔴 05.00 pm *( AUS )*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#satlvl3link').value}${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
+          `
+         });
+
+document.querySelector('#satlvl3copy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#satlvl3out').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Saturday Level - 3 copied!');
 });
-document.querySelector('.atmtcopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.atmtout').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert("Monday's Text copied!");
+
+document.querySelector('#satlvl3share').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#satlvl3out').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
 });
-document.querySelector('.swisscopy').addEventListener('click', function() {
-    const textToCopy = document.querySelector('.output').innerText;
-    const textarea = document.createElement('textarea');
-    textarea.value = textToCopy;
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand('copy');
-    document.body.removeChild(textarea);
-    alert("Swiss Tournament's Text copied!");
+
+// -------------------------SAT LVL 3 -----------------------
+
+document.querySelector('#sunlvl1submit').addEventListener('click',()=>{
+          document.querySelector('#sunlvl1out').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
+
+*🔥 ${document.querySelector('#suntmtno').value} WCA Online TMT - L1 🔥*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⚜️ *Date :* ${document.querySelector('#sundate').value}, 2024${"<br>"}
+⚜️ *Day  :* Sunday${"<br>"}${"<br>"}
+
+⚜️ *Time :*${"<br>"}
+🔴 05.30 pm *( IST )*${"<br>"}
+🟢 04.00 pm *( UAE )*${"<br>"}
+🔴 03.00 pm *( Saudi / Kuwait / Qatar )*${"<br>"}
+🟢 08.00 pm *( MYT / SGT / HKT )*${"<br>"}
+🔴 12.00 pm *( UK )*${"<br>"}
+🟢 01.00 pm *( CET )*${"<br>"}
+🔴 11.00 pm *( AUS )*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#sunlvl1link').value}${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
+          `
+         });
+
+document.querySelector('#sunlvl1copy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#sunlvl1out').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Sunday Level - 1 copied!');
 });
+
+document.querySelector('#sunlvl1share').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#sunlvl1out').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
+});
+
+
+// ------------------------- SUN LVL 1 -----------------------
+
+document.querySelector('#sunlvl2submit').addEventListener('click',()=>{
+          document.querySelector('#sunlvl2out').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
+
+*🔥 ${document.querySelector('#suntmtno').value} WCA Online TMT - L2 🔥*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⚜️ *Date :* ${document.querySelector('#sundate').value}, 2024${"<br>"}
+⚜️ *Day  :* Sunday${"<br>"}${"<br>"}
+
+⚜️ *Time :*${"<br>"}
+🔴 05.30 pm *( IST )*${"<br>"}
+🟢 04.00 pm *( UAE )*${"<br>"}
+🔴 03.00 pm *( Saudi / Kuwait / Qatar )*${"<br>"}
+🟢 08.00 pm *( MYT / SGT / HKT )*${"<br>"}
+🔴 12.00 pm *( UK )*${"<br>"}
+🟢 01.00 pm *( CET )*${"<br>"}
+🔴 11.00 pm *( AUS )*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#sunlvl2link').value}${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
+          `
+         });
+
+document.querySelector('#sunlvl2copy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#sunlvl2out').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Sunday Level - 2 copied!');
+});
+
+document.querySelector('#sunlvl2share').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#sunlvl2out').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
+});
+
+
+// ------------------------- SUN LVL 2 -----------------------
+
+document.querySelector('#monsubmit').addEventListener('click',()=>{
+          document.querySelector('#monout').innerHTML= `
+         *♟️WARRIOR CHESS ACADEMY♟️*${"<br>"}${"<br>"}
+
+*🔥 ${document.querySelector('#sattmtno').value} WCA Online TMT 🔥*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⚜️ *Date :* ${document.querySelector('#sundate').value}, 2024${"<br>"}
+⚜️ *Day  :* Sunday${"<br>"}${"<br>"}
+
+⚜️ *Time :*${"<br>"}
+🔴 04.30 pm *( PST )*${"<br>"}
+🟢 06.30 pm *( CST )*${"<br>"}
+🔴 07.30 pm *( EST )*${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+*🎯 Tournament Link👇*${"<br>"}
+${document.querySelector('#monlink').value}${"<br>"}${"<br>"}
+
+----------------------------------------------------------${"<br>"}${"<br>"}
+
+⏱ *Duration - 100 minutes*${"<br>"}
+🤝 *ALL THE BEST* 🤝
+          `
+         });
+
+document.querySelector('#moncopy').addEventListener('click', function() {
+const textToCopy = document.querySelector('#monout').innerText;
+const textarea = document.createElement('textarea');
+textarea.value = textToCopy;
+document.body.appendChild(textarea);
+textarea.select();
+document.execCommand('copy');
+document.body.removeChild(textarea);
+alert('Monday Tmt Link copied!');
+});
+
+document.querySelector('#monshare').addEventListener('click', function () {
+        const textToCopy = document.querySelector('#monout').innerText;
+        const textarea = document.createElement('textarea');
+        textarea.value = textToCopy;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        let message = encodeURIComponent(textToCopy);
+        var whatsappLink = 'https://api.whatsapp.com/send?text=' + message;
+        var anchorTag = document.createElement('a');
+        anchorTag.href = whatsappLink;
+        anchorTag.target = '_blank';
+        document.body.appendChild(anchorTag);
+        anchorTag.click();
+        document.body.removeChild(anchorTag);
+});
+// ------------------------- MONDAY TMT -----------------------
 </script>
 </body>
 </html>
